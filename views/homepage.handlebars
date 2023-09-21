@@ -10,9 +10,11 @@
     <p>
       <span for="img" aria-label="money">💲</span>
       <!-- Pass needed_funding value to the helper function -->
-      <span class="dollar-amount">{{format_amount project.needed_funding}}</span>
-      needed!
-    </p>
+      {{!-- <span class="dollar-amount">{{format_amount project.needed_funding}}</span>
+      needed!--}}
+      <span class="submitDate">{{format_date project.due_date}}</span>
+    </p> 
+
     <p>Created by {{project.user.name}} on {{format_date project.date_created}}</p>
   </div>
   <div class="col-md-7">
