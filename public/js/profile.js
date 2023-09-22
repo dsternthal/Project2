@@ -2,7 +2,7 @@ const newFormHandler = async (event) => {
   event.preventDefault();
 
   const name = document.querySelector('#project-name').value.trim();
-  const importance = document.querySelector('#task-importance').value.trim();
+  const importance = document.querySelector('#importance').value.trim();
   const description = document.querySelector('#project-desc').value.trim();
   const due_date = document.querySelector('#due-date').value.trim();
 

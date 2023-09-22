@@ -19,4 +19,18 @@ module.exports = {
       return `<span for="img" aria-label="gear">⚙️</span>`;
     }
   },
+  
+  get_color: () => {
+    const priority = document.querySelector('#importance').value;
+    const cardEl = document.getElementById("card")
+
+    if (priority === "high") {
+      cardEl.addClass("pink")
+      cardEl.style.backgroundColor="pink"
+    } if (priority === "medium") {
+      cardEl.addClass("blue")
+    } else {
+      cardEl.addClass("white")
+    }
+  },
 };
