@@ -4,14 +4,17 @@ const withAuth = require('../../utils/auth');
 
 //http://localhost:3001/api/projects/
 router.post('/', withAuth, async (req, res) => {
+  const body=req.body
   try {
+    console.log(req.body)
     const newProject = await Project.create({
-      ...req.body,
+      ...body,
       user_id: req.session.user_id,
     });
 
     res.status(200).json(newProject);
   } catch (err) {
+    console.log(err)
     res.status(400).json(err);
   }
 });
