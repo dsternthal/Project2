@@ -1,7 +1,36 @@
-<!-- Loop over each object in the projects array -->
-  {{!-- <div uk-filter="target: .js-filter"> --}}
 
-    {{!-- <ul class="uk-subnav uk-subnav-pill">
+
+{{#each projects as |project| }}
+<div class="row mb-4 project">
+  
+
+  <div class="{{{get_color project.importance}}}" id="card">
+    <h2>
+      <!-- Call helper function with triple brackets to render the emoji span as HTML -->
+      {{{get_emoji}}}
+      {{!-- {{{get_color}}} --}}
+      <a href="/project/{{project.id}}">{{project.name}}</a>
+    </h2>
+    <p>
+      {{!-- <span for="img" aria-label="money">💲</span> --}}
+      <!-- Pass needed_funding value to the helper function -->
+      {{!-- <span class="dollar-amount">{{format_amount project.needed_funding}}</span>
+      needed!--}}
+      <span class="submitDate">{{format_date project.due_date}}</span>
+    </p> 
+    <p>Created by {{project.user.name}} on {{format_date project.date_created}}</p>
+  </div>
+  <div class="col-md-7">
+    <p>
+      {{project.description}}
+    </p>
+  </div>
+</div>
+
+
+<div uk-filter="target: .js-filter">
+
+    <ul class="uk-subnav uk-subnav-pill">
         <li class="uk-active" uk-filter-control><a href="#">All</a></li>
         <li uk-filter-control="[data-color='white']"><a href="#">White</a></li>
         <li uk-filter-control="[data-color='blue']"><a href="#">Blue</a></li>
@@ -45,32 +74,7 @@
         <li data-color="black">
             <div class="uk-card uk-card-secondary uk-card-body">Item</div>
         </li>
-    </ul> --}}
+    </ul>
 
-{{#each projects as |project| }}
-<div class="row mb-4 project">
-  
-
-  <div class="col-md-5" id="card">
-    <h2>
-      <!-- Call helper function with triple brackets to render the emoji span as HTML -->
-      {{{get_emoji}}}
-      {{!-- {{{get_color}}} --}}
-      <a href="/project/{{project.id}}">{{project.name}}</a>
-    </h2>
-    <p>
-      <span for="img" aria-label="money">💲</span>
-      <!-- Pass needed_funding value to the helper function -->
-      {{!-- <span class="dollar-amount">{{format_amount project.needed_funding}}</span>
-      needed!--}}
-      <span class="submitDate">{{format_date project.due_date}}</span>
-    </p> 
-    <p>Created by {{project.user.name}} on {{format_date project.date_created}}</p>
-  </div>
-  <div class="col-md-7">
-    <p>
-      {{project.description}}
-    </p>
-  </div>
 </div>
 {{/each}}
