@@ -13,11 +13,13 @@
         <li data-color="{{{get_color project.importance}}}" id="card">
 
             <div class="uk-card uk-card-default uk-card-body {{{get_color project.importance}}} "><a href="/project/{{project.id}}">{{project.name}}</a>
-            <span class="submitDate">{{format_date project.due_date}}</span>
+        
             <p>Created by {{project.user.name}} on {{format_date project.date_created}}</p>
             <p>
             {{project.description}}
             </p>
+            <p class="submitDate">Due on {{format_date project.due_date}}</p>
+
             
             
             </div>
