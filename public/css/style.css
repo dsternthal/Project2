@@ -32,3 +32,6 @@ header, .project:not(:last-child) {
 .green {
   background: rgba(110, 211, 105, 0.3);
 }
+.gray {
+  background: rgba(67, 71, 67, 0.293);
+}

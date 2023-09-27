@@ -29,9 +29,12 @@ module.exports = {
     } else if (priority === "medium") {
       // cardEl.addClass("blue")
       return `orange`
-    } else {
+    } else if (priority === "low") {
       // cardEl.addClass("white")
       return `green`
+    }
+    else {
+      return 'gray'
     }
   },
 };
