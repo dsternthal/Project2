@@ -20,17 +20,21 @@ module.exports = {
     }
   },
   
-  get_color: () => {
-    const priority = document.querySelector('#importance').value;
-    const cardEl = document.getElementById("card")
+  get_color: (priority) => {
 
     if (priority === "high") {
-      cardEl.addClass("pink")
-      cardEl.style.backgroundColor="pink"
-    } if (priority === "medium") {
-      cardEl.addClass("blue")
-    } else {
-      cardEl.addClass("white")
+      return `red`
+      // cardEl.addClass("pink")
+      // cardEl.style.backgroundColor="pink"
+    } else if (priority === "medium") {
+      // cardEl.addClass("blue")
+      return `orange`
+    } else if (priority === "low") {
+      // cardEl.addClass("white")
+      return `green`
+    }
+    else {
+      return 'gray'
     }
   },
 };

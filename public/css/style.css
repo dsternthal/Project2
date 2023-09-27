@@ -23,6 +23,15 @@ header, .project:not(:last-child) {
   margin-left: -5px;
 }
 
-.pink{
-  background-color:hotpink;
+.red{
+  background: rgba(214, 50, 48, 0.3);
+}
+.orange {
+  background: rgba(249, 194, 83, 0.3);
+}
+.green {
+  background: rgba(110, 211, 105, 0.3);
+}
+.gray {
+  background: rgba(67, 71, 67, 0.293);
 }
