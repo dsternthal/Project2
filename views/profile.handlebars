@@ -1,25 +1,25 @@
 <div class="row">
   <div class="col-auto">
-    <h2>Welcome, {{name}}!</h2>
+    <h2 class="profileWelcome">Welcome, {{name}}!</h2>
   </div>
 </div>
 
 <div class="row mt-4">
   <div class="col-md-6">
-    <h3>Create a New Project:</h3>
+    <h3><span class="highlight">Create a New Project:</span></h3>
 
-    <form class="form new-project-form">
+    <form class="form new-project-form ">
       <div class="form-group">
-        <label for="project-name">project name:</label>
+        <label for="project-name">Project Name:</label>
         <input class="form-input" type="text" id="project-name" name="project-name" />
       </div>
       <div class="form-group">
         {{!-- look for dropdown in bootstrap or css framework --}}
         <label for="importance">Importance:</label>
           <select class="form-input" type="button" id="importance" name="importance">
-            <option>high</option>
-            <option >medium</option>
-            <option>low</option>
+            <option>High</option>
+            <option >Medium</option>
+            <option>Low</option>
           </select>
         </div>
     {{!-- </div> --}}
@@ -35,7 +35,7 @@
 
 
       <div class="form-group">
-        <label for="project-desc">description:</label>
+        <label for="project-desc">Description:</label>
         <textarea class="form-input" id="project-desc" name="project-desc"></textarea>
       </div>
       <div class="form-group">
@@ -50,7 +50,7 @@
 
   {{#if projects.length}}
   <div class="col-md-6 project-list">
-    <h3>Current Projects:</h3>
+    <h3><span class="highlight">Current Projects:</span></h3>
 
     {{#each projects as |project|}}
     <div class="row mb-2">

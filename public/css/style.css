@@ -24,14 +24,48 @@ header, .project:not(:last-child) {
 }
 
 .red{
-  background: rgba(214, 50, 48, 0.3);
+  background: rgba(214, 50, 48, 0.4);
 }
 .orange {
-  background: rgba(249, 194, 83, 0.3);
+  background: rgba(249, 194, 83, 0.4);
 }
 .green {
-  background: rgba(110, 211, 105, 0.3);
+  background: rgba(110, 211, 105, 0.4);
 }
 .gray {
   background: rgba(67, 71, 67, 0.293);
+}
+
+#pageTitle {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif IMPO !important;
+  font-weight: 800 !important;
+  
+}
+
+.profileWelcome:hover{
+  text-decoration: underline;
+}
+
+.bd{
+  background-color: rgb(255, 244, 230);
+}
+
+.highlight{
+  position: relative;
+  z-index: 1;
+}
+.highlight::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -5px;
+  right: -5px;
+  background-color: #6fb8e07e;
+  transform: skew(-15deg);
+  z-index: -1;
+}
+
+.boxBackg{
+  background-color: #6fb8e07e;
 }
