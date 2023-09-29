@@ -22,15 +22,11 @@ module.exports = {
   
   get_color: (priority) => {
 
-    if (priority === "high") {
+    if (priority === "High") {
       return `red`
-      // cardEl.addClass("pink")
-      // cardEl.style.backgroundColor="pink"
-    } else if (priority === "medium") {
-      // cardEl.addClass("blue")
+    } else if (priority === "Medium") {
       return `orange`
-    } else if (priority === "low") {
-      // cardEl.addClass("white")
+    } else if (priority === "Low") {
       return `green`
     }
     else {
