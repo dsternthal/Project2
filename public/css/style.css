@@ -38,23 +38,15 @@ header, .project:not(:last-child) {
 
 #pageTitle {
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif IMPO !important;
-  font-weight: 800 !important;
+  /* font-weight: 800 !important; */
+  /* padding: 20px 50px; */
   
 }
-
-.profileWelcome:hover{
-  text-decoration: underline;
-}
-
-.bd{
-  background-color: rgb(255, 244, 230);
-}
-
-.highlight{
+.profileWelcome{
   position: relative;
   z-index: 1;
 }
-.highlight::before {
+.profileWelcome::before {
   content: "";
   position: absolute;
   top: 0;
@@ -65,7 +57,59 @@ header, .project:not(:last-child) {
   transform: skew(-15deg);
   z-index: -1;
 }
+.bd{
+  background-color: rgb(255, 244, 230);
+}
+
+.highlight, .profileWelcome {
+  animation: 2s anim-lineUp ease-out ;
+}
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: .5;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+.profileprojects {
+  text-decoration: underline;
+}
+
+
+
+/* .highlight:hover{
+  text-decoration: underline;
+} */
+/* .highlight{
+  position: relative;
+  z-index: 1;
+} */
+/* .highlight::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -5px;
+  right: -5px;
+  background-color: #6fb8e07e;
+  transform: skew(-15deg);
+  z-index: -1;
+} */
 
 .boxBackg{
   background-color: #6fb8e07e;
+}
+
+#loginBtn, #profileBtn {
+  padding: 0px 20px;
 }
