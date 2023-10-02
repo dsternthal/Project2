@@ -26,7 +26,9 @@ This README provides information on how to get started with Task Manager, its ke
 - **Task Status Tracking**: Mark tasks as complete, in progress, or pending.
 - **User Authentication**: Securely register and log in to access your tasks across devices.
 ​
-## Getting Started
+## Links
+ Heroku: https://taskmanager-iadr-2102a2f1ab2e.herokuapp.com/login
+ Repo: https://github.com/dsternthal/Task-Manager
 ​
 ### Prerequisites
 ​
