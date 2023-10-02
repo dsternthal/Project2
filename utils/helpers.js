@@ -19,4 +19,18 @@ module.exports = {
       return `<span for="img" aria-label="gear">⚙️</span>`;
     }
   },
+  
+  get_color: (priority) => {
+
+    if (priority === "High") {
+      return `red`
+    } else if (priority === "Medium") {
+      return `orange`
+    } else if (priority === "Low") {
+      return `green`
+    }
+    else {
+      return 'gray'
+    }
+  },
 };

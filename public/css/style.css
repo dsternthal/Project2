@@ -22,3 +22,94 @@ header, .project:not(:last-child) {
   font-weight: bold;
   margin-left: -5px;
 }
+
+.red{
+  background: rgba(214, 50, 48, 0.4);
+}
+.orange {
+  background: rgba(249, 194, 83, 0.4);
+}
+.green {
+  background: rgba(110, 211, 105, 0.4);
+}
+.gray {
+  background: rgba(67, 71, 67, 0.293);
+}
+
+#pageTitle {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif IMPO !important;
+  /* font-weight: 800 !important; */
+  /* padding: 20px 50px; */
+  
+}
+.profileWelcome{
+  position: relative;
+  z-index: 1;
+}
+.profileWelcome::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -5px;
+  right: -5px;
+  background-color: #6fb8e07e;
+  transform: skew(-15deg);
+  z-index: -1;
+}
+.bd{
+  background-color: rgb(255, 244, 230);
+}
+
+.highlight, .profileWelcome {
+  animation: 2s anim-lineUp ease-out ;
+}
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: .5;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+.profileprojects {
+  text-decoration: underline;
+}
+
+
+
+/* .highlight:hover{
+  text-decoration: underline;
+} */
+/* .highlight{
+  position: relative;
+  z-index: 1;
+} */
+/* .highlight::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -5px;
+  right: -5px;
+  background-color: #6fb8e07e;
+  transform: skew(-15deg);
+  z-index: -1;
+} */
+
+.boxBackg{
+  background-color: #6fb8e07e;
+}
+
+#loginBtn, #profileBtn {
+  padding: 0px 20px;
+}

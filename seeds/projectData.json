@@ -1,17 +1,20 @@
 [
   {
-    "name": "Music Near Me",
-    "description": "A mobile app that will send you notifications whenever a concert is playing in your area.",
-    "needed_funding": 5000
+    "name": "Coding Class Practice Questions",
+    "description": "Review practice questions from class 1-6 & correct errors",
+    "importance": "High",
+    "due_date": "10/3/2023"
   },
   {
-    "name": "The Ultimate Tech Quiz",
-    "description": "A web app that will give users 10 new technical questions each day and track their progress in things like programming, cybersecurity, database architecture, and more!",
-    "needed_funding": 10000
+    "name": "Read Pleasure Book to Relax",
+    "description": "Read 1 chapter",
+    "importance": "Low",
+    "due_date": "10/4/2023"
   },
   {
-    "name": "Roll 'Em Up",
-    "description": "A game for Windows and macOS where players move a ball through a series of increasingly challenging mazes.",
-    "needed_funding": 800
+    "name": "Make Dinner",
+    "description": "Time for Mac & Cheese! Don't forget to buy butter",
+    "importance": "Medium",
+    "due_date": "10/2/2023"
   }
 ]
