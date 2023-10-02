@@ -15,17 +15,17 @@
     <header class="display-flex justify-space-between align-center p-2" id="pageTitle"> 
       <h1>
         {{!-- <span role="img" aria-label="money">💸</span> --}}
-        <a href="/">Task Manager!</a>
+        <a href="/">Task Manager</a>
       </h1>
       <nav>
         <!-- Conditionally render login or logout links -->
         {{#if logged_in}}
-        <a href="/profile">profile</a> |
-        <button class="no-button" id="logout">logout</button>
+        <a id="profileBtn" href="/profile">Profile</a> 
+        <button class="no-button" id="logout">Logout</button>
         {{else}}
-        <a href="/login">login</a>
+        <a id="loginBtn" href="/login">Login</a>
 
-               <a href="/login">sign-up</a>
+               <a id="signupBtn" href="/login">Sign-up</a>
         {{/if}}
       </nav>
     </header>
